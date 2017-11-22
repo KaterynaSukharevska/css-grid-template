@@ -1,0 +1,602 @@
+.wrapper {
+	min-width: 320px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.wrapper button {
+	outline: none;
+}
+
+.wrapper img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+
+.wrapper .container {
+	max-width: 1200px;
+}
+
+.button-form {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+}
+
+.orange-btn {
+	padding: 16px 30px;
+	background: #ff6633;
+}
+
+/*First section KV*/
+.wrapper .section-kv {
+	background: url(../img/bg-kv.jpg) no-repeat center / cover;
+	margin-bottom: 40px;
+}
+
+.wrapper .section-kv .logo,
+.wrapper .footer .footer-logo{
+    font-size: 36px;
+    color: #ff6633;
+    margin: 0 0 5% 2%;
+}
+
+.wrapper .section-kv .center-part {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper .section-kv .center-part .text-kv-big {
+	font-size: 38px;
+}
+
+.wrapper .section-kv .center-part .text-kv-small {
+	font-size: 17px;
+}
+
+.wrapper .section-kv .center-part .text-kv-small span {
+	text-decoration: underline;
+}
+
+.wrapper .section-kv .center-part .buttons-wrap {
+	margin: 5% 0;
+}
+
+.wrapper .section-kv .center-part .buttons-wrap .find-table  {
+	padding: 16px 18px;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper .section-kv .scroll-down {
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 2px;
+    width: 142px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+.wrapper .section-kv .scroll-down:after {
+	content: "";
+	width: 13px;
+	height: 13px;
+	position: absolute;
+    bottom: 18px;
+    left: 46%;
+	background: url(../img/arrow.png) no-repeat;
+}
+
+/*First section KV end*/
+
+/*Second section ABOUT*/
+.wrapper .section-about {
+	margin-bottom: 40px;
+}
+.wrapper .section-about .about-text-wrap {
+	margin: 20px 0;
+	padding: 0 5% 5% 0;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper .section-about .about-text-wrap h2,
+.wrapper .section-fnb .fnb-text-wrap h2 {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: #3b3b3b;
+}
+
+.wrapper .section-about .about-text-wrap .text-info p,
+.wrapper .section-fnb .fnb-text-wrap .text-info p {
+	color: #4b4b4b;
+	font-size: 16px;
+}
+
+.wrapper .section-about .about-text-wrap .text-info p span,
+.wrapper .section-fnb .fnb-text-wrap .text-info p span {
+	color: #ff6633;
+}
+
+.wrapper .section-about .about-text-wrap .orange-btn,
+.wrapper .section-fnb .fnb-text-wrap .orange-btn  {
+	align-self: flex-end;
+}
+
+.wrapper .section-about .wrap-img-glass,
+.wrapper .section-about .wrap-img-kitchen,
+.wrapper .section-about .wrap-img-beef {
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*Second section ABOUT end*/
+
+/*Third section FNB*/
+.wrapper .section-fnb {
+	display: grid;
+	margin-bottom: 40px;
+	grid-template-areas:
+		"img-one img-two"
+		"text-el text-el"
+		"img-tree img-tree";
+}
+
+.wrapper .section-fnb .wrap-img-beef-apples {
+	grid-area: img-one;
+
+	padding-right: 4px;
+}
+
+.wrapper .section-fnb .wrap-img-beef-potatoes {
+	grid-area: img-two;
+}
+
+.wrapper .section-fnb .fnb-text-wrap {
+	grid-area: text-el;
+
+	margin: 20px 0;
+	display: flex;
+    flex-direction: column;
+}
+
+.wrapper .section-fnb .wrap-img-dessert {
+	grid-area: img-tree;
+	margin-top: 4px;
+}
+/*Third section FNB end*/
+
+
+/*Fourth section EVENTS AND RESERVATION*/
+
+.wrapper .events-and-reservation {
+	background-color: #f7f7f7;
+	padding: 40px 0;
+}
+
+.wrapper .events-and-reservation h3 {
+	color: #3b3b3b;
+	font-size: 22px;
+	text-align: center;
+}
+
+.wrapper .events-and-reservation .reservation form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper .events-and-reservation .reservation form input {
+	width: 250px;
+	padding: 20px 20px 20px 40px;
+	font-size: 14px;
+	border: 1px solid #e5e4e4;
+	background: #f7f7f7;
+	color: #757272;
+	border-radius: 2px;
+	margin-bottom: 22px;
+	transition: all .3s ease-in-out;
+}
+
+.wrapper .events-and-reservation .reservation form input:focus {
+	outline: none;
+	transition: all .3s ease-in-out;
+	-webkit-box-shadow: 4px 3px 10px 3px #ccc;
+	-moz-box-shadow: 4px 3px 10px 3px #ccc;
+	box-shadow: 4px 3px 10px 3px #ccc;
+}
+
+.wrapper .events-and-reservation .reservation form input#text[required] + label,
+.wrapper .events-and-reservation .reservation form input#date[required] + label,
+.wrapper .events-and-reservation .reservation form input#time[required] + label,
+.wrapper .events-and-reservation .reservation form input#text2[required] + label {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.wrapper .events-and-reservation .reservation form input#text[required] + label:before,
+.wrapper .events-and-reservation .reservation form input#date[required] + label:before,
+.wrapper .events-and-reservation .reservation form input#time[required] + label:before,
+.wrapper .events-and-reservation .reservation form input#text2[required] + label:before {
+	background: url(../img/icon-1.png);
+	width: 13px;
+	height: 13px;
+	content: "";
+	position: absolute;
+	top: -59px;
+	left: -137px;
+}
+
+.wrapper .events-and-reservation .reservation form input#date[required] + label:before {
+	background: url(../img/icon-2.png);
+}
+.wrapper .events-and-reservation .reservation form input#time[required] + label:before {
+	background: url(../img/icon-3.png);
+	width: 14px;
+	height: 14px;
+}
+.wrapper .events-and-reservation .reservation form input#text2[required] + label:before {
+	background: url(../img/icon-4.png);
+}
+
+.wrapper .events-and-reservation .reservation form .find-table {
+	width: 312px;
+	background-color: #222222;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 20px;
+	border-radius: 2px;
+}
+
+
+.wrapper .events-and-reservation .reservation,
+.wrapper .events-and-reservation .events {
+	background-color: #ffffff;
+	box-shadow:
+			0 1px 4px rgba(0, 0, 0, .3),
+			-23px 0 20px -23px rgba(0, 0, 0, .8),
+			23px 0 20px -23px rgba(0, 0, 0, .8),
+			0 0 40px rgba(0, 0, 0, .1) inset;
+	max-width: 460px;
+	margin: 0 auto;
+	padding: 30px 39px 30px 36px;
+	box-sizing: border-box;
+}
+
+.wrapper .events-and-reservation .events .one-event {
+	display: flex;
+	flex-direction: row;
+}
+
+.wrapper .events-and-reservation .events .one-event:nth-child(2),
+.wrapper .events-and-reservation .events .one-event:nth-child(3) {
+	margin-bottom: 35px;
+}
+
+.wrapper .events-and-reservation .events .one-event  .img-wrap {
+	margin-right: 3px;
+}
+
+.wrapper .events-and-reservation .events .one-event .img-wrap img {
+	width: 72px;
+	height: 72px;
+}
+
+.wrapper .events-and-reservation .events .one-event .event-name {
+	font-size: 16px;
+	font-weight: bold;
+	color: #ff7a4e;
+}
+.wrapper .events-and-reservation .events .one-event .event-date {
+	color: #3b3b3b;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px 0 9px 0;
+}
+
+.wrapper .events-and-reservation .events .one-event .event-date .event-month,
+.wrapper .events-and-reservation .events .one-event .event-date .event-time {
+	display: inline-block;
+	margin-left: 15px;
+	position: relative;
+}
+
+.wrapper .events-and-reservation .events .one-event .event-date .event-month:before{
+	content: "";
+	position: absolute;
+	top: -1px;
+	left: -14px;
+	background: url("../img/icon-2.png");
+	width: 13px;
+	height: 13px;
+}
+
+.wrapper .events-and-reservation .events .one-event .event-date .event-time:before {
+	content: "";
+	position: absolute;
+	top: -1px;
+	left: -15px;
+	background: url("../img/icon-3.png");
+	width: 14px;
+	height: 14px;
+}
+
+.wrapper .events-and-reservation .events .one-event .event-disk {
+	font-size: 14px;
+}
+.wrapper .events-and-reservation .events .one-event .read-more {
+	font-size: 14px;
+	color: #ff7a4e;
+	text-decoration: none;
+	font-style: italic;
+}
+
+/*Fourth section EVENTS end*/
+
+/*Fifth section FOOTER*/
+
+.wrapper .footer {
+	padding: 5% 1%;
+	background-color: #222222;
+
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 25px;
+	align-items: center;
+	justify-items: center;
+}
+
+.wrapper .footer .footer-logo {
+	margin: 0;
+}
+.wrapper .footer .txt-part {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.wrapper .footer .contacts .icons {
+	display: flex;
+	justify-content:  space-between;
+	max-width: 135px;
+}
+.wrapper .footer .contacts .icons .wrap-fb {
+	width: 9px;
+}
+.wrapper .footer .contacts .icons .wrap-tw {
+	width: 15px;
+}
+.wrapper .footer .contacts .icons .wrap-inst {
+	width: 14px;
+}
+.wrapper .footer .contacts .icons .wrap-trip {
+	width: 22px;
+}
+
+.wrapper .footer .visit {
+	color: #ffffff;
+	text-align: center;
+}
+
+/*Fifth section FOOTER end*/
+
+@media(min-width: 768px) {
+
+	/*First section KV*/
+
+	.wrapper .section-kv {
+		display: grid;
+		grid-template-columns: 1fr 1fr 2fr 2fr;
+		grid-template-rows: 1fr 8fr 1fr;
+
+		height: 100vh;
+	}
+
+	.wrapper .section-kv .logo {
+		grid-column-start: 2;
+	    grid-column-end: 2;
+	    grid-row-start: 1;
+	    grid-row-end: 1;
+
+	    margin-top: 8%;
+	}
+
+	.wrapper .section-kv .center-part {
+		grid-column-start: 3;
+	    grid-column-end: 3;
+	    grid-row-start: 2;
+	    grid-row-end: 2;
+	}
+
+	.wrapper .section-kv .center-part .text-kv-big {
+		font-size: 52px;
+	}
+
+	.wrapper .section-kv .center-part .text-kv-small {
+		font-size: 36px;
+	}
+
+	.wrapper .section-kv .center-part .buttons-wrap {
+		margin: 5% 0 0 0;
+	}
+
+	.wrapper .section-kv .scroll-down {
+		grid-column-start: 3;
+    	grid-column-end: 3;
+    	grid-row-start: 3;
+    	grid-row-end: 3;
+
+    	display: block;
+	}
+
+	/*First section KV end*/
+
+	/*Second section ABOUT*/
+
+	.wrapper .section-about .about-text-wrap h2,
+	.wrapper .section-fnb .fnb-text-wrap h2 {
+		font-size: 23px;
+		margin: 0;
+	}
+
+	.wrapper .section-about .about-text-wrap .text-info p,
+	.wrapper .section-fnb .fnb-text-wrap .text-info p {
+		font-size: 13px;
+	}
+
+	.wrapper .section-about {
+		margin-left: 15%;
+
+		display: grid;
+		grid-template-columns: 43% 4.5% 27.6% 24.5%;
+		grid-template-rows: 3.2fr 1fr 2.2fr;
+	}
+
+	.wrapper .section-about .wrap-img-glass,
+	.wrapper .section-about .wrap-img-kitchen,
+	.wrapper .section-about .wrap-img-beef {
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.wrapper .section-about .wrap-img-glass {
+		grid-column: 2 / 5;
+      	grid-row: 1 / 3;
+	}
+
+	.wrapper .section-about .about-text-wrap {
+		grid-column: 1 / 2;
+      	grid-row: 1 / 2 ;
+      	padding-bottom: 0;
+      	margin: 0 0 5px 0;
+	}
+
+	.wrapper .section-about .orange-btn,
+	.wrapper .section-fnb .orange-btn {
+		padding: 10px 30px;
+	}
+
+	.wrapper .section-about .wrap-img-chef {
+		grid-column: 1 / 3 ;
+      	grid-row: 2 / 4 ;
+	}
+
+	.wrapper .section-about .wrap-img-kitchen {
+		grid-column: 3 / 4 ;
+      	grid-row: 3 / 4 ;
+      	padding: 7% 0% 0 10%;
+	}
+	
+	.wrapper .section-about .wrap-img-beef {
+		grid-column: 4 / 5 ;
+      	grid-row: 3 / 4 ;
+      	padding: 7% 0 0 12%;
+	}
+
+	/*Second section ABOUT end*/
+
+	/*Third section FNB*/
+	.wrapper .section-fnb {
+		grid-template-areas:
+		"img-one img-two text-el text-el"
+		"img-tree img-tree text-el text-el";
+
+		margin: 0 15% 40px 15%;
+	}
+
+	.wrapper .section-fnb .fnb-text-wrap {
+		margin: 0 0 5px 5px;
+	}
+
+	/*Third section FNB end*/
+
+	.wrapper .events-and-reservation {
+		padding: 40px 15%;
+	}
+
+	/*Fourth section EVENTS end*/
+
+	/*Fifth section FOOTER*/
+
+	.wrapper .footer {
+		padding:  20px 15%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 100%;
+		align-items: center;
+	}
+
+	/*Fifth section FOOTER end*/
+}
+
+@media(min-width: 940px) {
+
+	.wrapper .section-about .about-text-wrap{
+		margin: 20px 0;
+	}
+
+	.wrapper .section-fnb .fnb-text-wrap {
+		margin: 20px 0 20px 10px;
+	}
+
+	.wrapper .section-about .about-text-wrap .text-info p,
+	.wrapper .section-fnb .fnb-text-wrap .text-info p {
+		font-size: 14px;
+	}
+
+	.wrapper .section-about .orange-btn,
+	.wrapper .section-fnb .orange-btn  {
+		padding: 16px 30px;
+	}
+
+}
+
+@media(min-width: 1185px) {
+
+	.wrapper .section-about .about-text-wrap .text-info p,
+	.wrapper .section-fnb .fnb-text-wrap .text-info p {
+		font-size: 16px;
+	}
+
+	.wrapper .section-about .about-text-wrap h2,
+	.wrapper .section-fnb .fnb-text-wrap h2 {
+		font-size: 26px;
+		margin-top: 22px;
+	}
+
+	/*Fourth section EVENTS*/
+
+	.wrapper .events-and-reservation {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.wrapper .events-and-reservation .reservation,
+	.wrapper .events-and-reservation .events {
+		width: 460px;
+	}
+
+	/*Fourth section EVENTS end*/
+}
+
